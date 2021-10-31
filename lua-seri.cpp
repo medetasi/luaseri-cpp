@@ -14,7 +14,7 @@ inline static string get_lua_value_str(lua_State *L, int index, int type) {
     if (type == LUA_TNUMBER) {
         double num = lua_tonumber(L, index);
         if (trunc(num) == num) {
-            return to_string(int(num));
+            return to_string(long(num));
         } else {
             char buffer[1024];
             dtoa_milo(num, buffer);
