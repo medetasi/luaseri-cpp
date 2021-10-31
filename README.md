@@ -6,3 +6,5 @@
 double 转 string 用了 https://github.com/miloyip/dtoa-benchmark/blob/master/src/milo/dtoa_milo.h
 
 效率比标准库的转换快很多
+
+编译器要支持 >= C++11
