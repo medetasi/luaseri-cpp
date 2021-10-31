@@ -9,4 +9,4 @@ target_include_directories(luaseri PUBLIC /usr/include/lua5.4)
 
 SET_TARGET_PROPERTIES(luaseri PROPERTIES PREFIX "")
 
-#set(CMAKE_CXX_FLAGS_RELEASE  "-O0")
+set(CMAKE_CXX_FLAGS_RELEASE  "-O3")
