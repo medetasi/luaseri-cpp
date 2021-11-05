@@ -9,6 +9,10 @@ using std::to_string;
 #include "lua.hpp"
 #include "dtoa_milo.h"
 
+extern "C" {
+    LUAMOD_API int luaopen_luaseri(lua_State *L);
+}
+
 // 只处理 number 和 table
 inline static string get_lua_value_str(lua_State *L, int index, int type) {
     if (type == LUA_TNUMBER) {
